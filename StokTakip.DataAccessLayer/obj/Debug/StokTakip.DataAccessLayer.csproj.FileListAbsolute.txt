@@ -1,0 +1,14 @@
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\StokTakip.DataAccessLayer.dll.config
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\StokTakip.DataAccessLayer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\StokTakip.DataAccessLayer.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\StokTakip.Entities.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\StokTakip.Entities.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\obj\Debug\StokTakip.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\obj\Debug\StokTakip.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\obj\Debug\StokTakip.DataAccessLayer.csproj.CopyComplete
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\obj\Debug\StokTakip.DataAccessLayer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.DataAccessLayer\obj\Debug\StokTakip.DataAccessLayer.pdb

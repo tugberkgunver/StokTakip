@@ -1,0 +1,83 @@
+﻿@using StokTakip.Entities.ViewModels
+@model ProductCategoryModel
+@{
+    ViewBag.Title = "UrunEkle";
+}
+
+<h2>UrunEkle</h2>
+
+@using (Html.BeginForm())
+{
+    <form role="form">
+        <fieldset>
+
+
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.UrunAdi, new { @class = "form-control input-lg", placeholder = "Ürün Adı" })
+
+            </div>
+            <div class="form-group">
+
+                @Html.DropDownListFor(m => m.SelectedCategoryId, (SelectList)ViewBag.CategoryData, "Lütfen Seçiniz", new { @class = "dropdown form-control" })
+
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.AlisFiyat, new { @class = "form-control input-lg", placeholder = "Alış Fiyatı", })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.SatisFiyat, new { @class = "form-control input-lg", placeholder = "Satış Fiyatı", })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.KdvOrani, new { @class = "form-control input-lg", placeholder = "Kdv Oranı", })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.StokMiktari, new { @class = "form-control input-lg", placeholder = "Stok Miktarı", })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Product.OlcuBirimi, new { @class = "form-control input-lg", placeholder = "Ölçü Birimi", })
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Kaydet">
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+
+}
+
+<br /><br />
+
+<table class="table ">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ürün Adı</th>
+            <th>Alış Fiyatı</th>
+            <th>Satış Fiyatı</th>
+            <th>Stok Miktarı</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+        <tr>
+            <th scope="row">@item.Id</th>
+            <td>@item.UrunAdi</td>
+            <td>@item.AlisFiyat</td>
+            <td>@item.SatisFiyat</td>
+            <td>@item.StokMiktari</td>
+            <td><a href="/Home/UrunDuzenle/@item.Id">Düzenle</a></td>
+            <td><a href="/Home/UrunSil/@item.Id">Sil</a></td>
+
+        </tr>
+        }
+
+
+    </tbody>
+</table>

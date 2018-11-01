@@ -1,0 +1,32 @@
+﻿@using StokTakip.Entities.ViewModels
+@model LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@using (Html.BeginForm())
+{
+    <form role="form">
+        <fieldset>
+            <h2>Lütfen giriş yapınız</h2>
+            
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Username, new { @class = "form-control input-lg", placeholder = "Kullanıcı Adınız" })
+
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.Password, new { @class = "form-control input-lg", placeholder = "Şifreniz", type = "password" })
+            </div>
+
+           
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Giriş">
+                </div>
+             
+            </div>
+        </fieldset>
+    </form>
+}
+

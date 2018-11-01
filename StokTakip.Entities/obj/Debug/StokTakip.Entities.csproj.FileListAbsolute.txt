@@ -1,0 +1,6 @@
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\bin\Debug\StokTakip.Entities.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\bin\Debug\StokTakip.Entities.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\obj\Debug\StokTakip.Entities.csprojAssemblyReference.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\obj\Debug\StokTakip.Entities.csproj.CoreCompileInputs.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\obj\Debug\StokTakip.Entities.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.Entities\obj\Debug\StokTakip.Entities.pdb

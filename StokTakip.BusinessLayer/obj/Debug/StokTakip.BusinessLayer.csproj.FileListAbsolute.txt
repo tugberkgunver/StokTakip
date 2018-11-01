@@ -1,0 +1,17 @@
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.BusinessLayer.dll.config
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.BusinessLayer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.BusinessLayer.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.DataAccessLayer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.Entities.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.DataAccessLayer.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.DataAccessLayer.dll.config
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\StokTakip.Entities.pdb
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\obj\Debug\StokTakip.BusinessLayer.csprojAssemblyReference.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\obj\Debug\StokTakip.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\obj\Debug\StokTakip.BusinessLayer.csproj.CopyComplete
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\obj\Debug\StokTakip.BusinessLayer.dll
+C:\Users\tugberkgunver\source\repos\StokTakip\StokTakip.BusinessLayer\obj\Debug\StokTakip.BusinessLayer.pdb
