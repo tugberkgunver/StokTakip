@@ -1,0 +1,75 @@
+﻿@using StokTakip.Entities.ViewModels
+@model SaleViewModel
+@{
+    ViewBag.Title = "Satış Yap";
+}
+
+<h2>Satiş Yap</h2>
+
+@using (Html.BeginForm())
+{
+    <form role="form">
+        <fieldset>
+
+
+            <div class="form-group">
+
+                
+                @Html.TextBoxFor(Model => Model.arananUrun.UrunAdi, new { @class = "form-control input-lg", placeholder = "Ürün Ara" })
+
+            </div>
+         
+
+            
+               
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Ara">
+               
+
+        
+        </fieldset>
+    </form>
+
+}
+
+<br />
+<br />
+@using (Html.BeginForm())
+{
+    <table class="table ">
+        <thead>
+            <tr>
+               
+                <th scope="col">Ürün Adı</th>
+                <th>Alış Fiyatı</th>
+                <th>Satış Fiyatı</th>
+                <th>Stok Miktarı</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.arananUrunler)
+            {
+            <tr>
+                
+                <td>@item.UrunAdi</td>
+                <td>@item.AlisFiyat TL</td>
+                <td>@item.SatisFiyat TL</td>
+                <td>@item.StokMiktari</td>
+            
+                <td><a href="/Home/SatisTamamla/@item.Id">Sat</a></td>
+
+            </tr>
+
+
+
+
+
+            }
+
+
+
+        </tbody>
+    </table>
+
+}
+

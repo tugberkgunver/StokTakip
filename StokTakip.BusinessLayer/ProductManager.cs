@@ -54,6 +54,11 @@ namespace StokTakip.BusinessLayer
             return repo_urun.Find(x => x.Id == gelenid);
         }
 
+        public List<StokTakipUrun> FindProductByName(string gelenurun)
+        {
+            return repo_urun.Find2(x => x.UrunAdi.Contains(gelenurun));
+        }
+
         public BusinessLayerResult<StokTakipUrun> UpdateProduct(StokTakipUrun gelenurun)
         {
 
@@ -63,6 +68,7 @@ namespace StokTakip.BusinessLayer
 
             eskiUrun.UrunAdi = gelenurun.UrunAdi;
             eskiUrun.AlisFiyat = gelenurun.AlisFiyat;
+            eskiUrun.StokMiktari = gelenurun.StokMiktari;
 
             int dbResult = repo_urun.Update(eskiUrun);
 

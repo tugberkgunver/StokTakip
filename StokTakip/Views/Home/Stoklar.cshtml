@@ -1,0 +1,55 @@
+﻿@using StokTakip.Entities.ViewModels
+@model ProductCategoryModel
+@{
+    ViewBag.Title = "Stoklar";
+}
+
+
+
+<h2>Stoklar</h2>
+@{int toplamAlis = 0;
+    int toplamSatis = 0;
+}
+<table class="table ">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Ürün Adı</th>
+            <th>Alış Fiyatı</th>
+            <th>Satış Fiyatı</th>
+            <th>Stok Miktarı</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.UrunAdi</td>
+                <td>@item.AlisFiyat TL</td>
+                <td>@item.SatisFiyat TL</td>
+                <td>@item.StokMiktari</td>
+                <td><a href="/Home/UrunDuzenle/@item.Id">Düzenle</a></td>
+                <td><a href="/Home/UrunSil/@item.Id">Sil</a></td>
+
+            </tr>
+
+
+            toplamAlis += item.StokMiktari * item.AlisFiyat;
+            toplamSatis += item.StokMiktari * item.SatisFiyat;
+
+
+        }
+
+
+
+    </tbody>
+</table>
+
+
+<div class="alert-danger">Stoktaki ürünlerin toplam alış değeri @toplamAlis TL</div>
+<br />
+<div class="alert-info">Stoktaki ürünlerin toplam satış değeri @toplamSatis TL</div>
+

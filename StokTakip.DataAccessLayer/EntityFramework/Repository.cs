@@ -68,6 +68,10 @@ namespace StokTakip.DataAccessLayer.EntityFramework
             return _objectSet.FirstOrDefault(where);
         }
 
-    
-}
+        public List<T> Find2(Expression<Func<T, bool>> where)
+        {
+            return _objectSet.Where(where).ToList();
+        }
+
+    }
 }

@@ -13,6 +13,12 @@ namespace StokTakip
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
+
+
         }
+
+
+
     }
 }

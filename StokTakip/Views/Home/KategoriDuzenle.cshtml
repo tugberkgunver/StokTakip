@@ -1,0 +1,30 @@
+﻿@using StokTakip.Entities
+@model StokTakipKategori
+@{
+    ViewBag.Title = "Kategori Düzenle";
+}
+
+<h2>Kategori Düzenle</h2>
+
+@using (Html.BeginForm())
+{
+    <form role="form">
+        <fieldset>
+
+
+            <div class="form-group">
+                @Html.TextBoxFor(Model => Model.KategoriAdi, new { @class = "form-control input-lg", placeholder = "Kategori Adı" })
+
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="Kaydet">
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+
+}
+

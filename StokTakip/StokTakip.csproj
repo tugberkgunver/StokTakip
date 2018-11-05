@@ -130,6 +130,10 @@
     <Content Include="Views\Home\KategoriEkle.cshtml" />
     <Content Include="Views\Home\RegisterOK.cshtml" />
     <Content Include="Views\Home\UrunDuzenle.cshtml" />
+    <Content Include="Views\Home\KategoriDuzenle.cshtml" />
+    <Content Include="Views\Home\SatisYap.cshtml" />
+    <Content Include="Views\Home\SatisTamamla.cshtml" />
+    <Content Include="Views\Home\Stoklar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

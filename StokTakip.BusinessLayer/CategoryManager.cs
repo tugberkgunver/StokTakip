@@ -41,5 +41,49 @@ namespace StokTakip.BusinessLayer
             return layerResult;
 
         }
+
+        public BusinessLayerResult<StokTakipKategori> DeleteCategory(int? gelenkategori)
+        {
+
+            BusinessLayerResult<StokTakipKategori> layerResult = new BusinessLayerResult<StokTakipKategori>();
+            StokTakipKategori kategoriBul = repo_cat.Find(x => x.Id == gelenkategori);
+
+
+            int dbResult = repo_cat.Delete(kategoriBul);
+
+            if (dbResult > 0)
+            {
+
+            }
+
+            return layerResult;
+
+        }
+
+        public StokTakipKategori FindProduct(int gelenid)
+        {
+            return repo_cat.Find(x => x.Id == gelenid);
+        }
+
+        public BusinessLayerResult<StokTakipKategori> UpdateProduct(StokTakipKategori gelenKategori)
+        {
+
+
+            BusinessLayerResult<StokTakipKategori> layerResult = new BusinessLayerResult<StokTakipKategori>();
+            StokTakipKategori eskiKategori = repo_cat.Find(x => x.Id == gelenKategori.Id);
+
+            eskiKategori.KategoriAdi = gelenKategori.KategoriAdi;
+            
+
+            int dbResult = repo_cat.Update(eskiKategori);
+
+            if (dbResult > 0)
+            {
+
+            }
+
+            return layerResult;
+
+        }
     }
 }

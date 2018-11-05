@@ -1,0 +1,50 @@
+﻿@using StokTakip.Entities.ViewModels
+@model SaleViewModel
+@{
+    ViewBag.Title = "SatisTamamla";
+}
+
+<h2>Satiş Tamamla</h2>
+
+@using (Html.BeginForm())
+{
+    <table class="table ">
+        <thead>
+            <tr>
+
+                <th scope="col">Ürün Adı</th>
+                <th>Alış Fiyatı</th>
+                <th>Satış Fiyatı</th>
+                <th>Stok Miktarı</th>
+                <th>Satış Miktarı</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+
+                <td>@Model.arananUrun.UrunAdi</td>
+                <td>@Model.arananUrun.AlisFiyat TL</td>
+                <td>@Model.arananUrun.SatisFiyat TL</td>
+                <td>@Model.arananUrun.StokMiktari</td>
+                <td>
+                    @Html.TextBoxFor(Model => Model.girilenMiktar, new { @class = "form-control input-lg", placeholder = "Miktar" })
+                </td>
+                <td><input type="submit" class="btn btn-success" value="Tamamla" /></td>
+                <td><a href="/Home/SatisYap" class="btn btn-danger">Iptal Et</a></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="alert-info">Bu satıştan elde edeceğiniz kar :</p>
+    </div>
+</div>

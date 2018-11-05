@@ -15,6 +15,7 @@ namespace StokTakip.Controllers
         UserManager um = new UserManager();
         ProductManager pm = new ProductManager();
         CategoryManager cm = new CategoryManager();
+        SaleManager sl = new SaleManager();
 
 
         public ActionResult Index()
@@ -35,6 +36,13 @@ namespace StokTakip.Controllers
             return View(category);
         }
 
+        public ActionResult Stoklar()
+        {
+            ProductCategoryModel pcm = new ProductCategoryModel();
+            pcm.Products = pm.GetProducts();
+            return View(pcm);
+
+        }
 
 
         [HttpPost]
@@ -128,8 +136,81 @@ namespace StokTakip.Controllers
             return RedirectToAction("UrunEkle");
         }
 
+        public ActionResult KategoriSil(int? id)
+        {
+            cm.DeleteCategory(id);
+            return RedirectToAction("KategoriEkle");
+        }
 
-     
+        public ActionResult KategoriDuzenle(int id)
+        {
+            StokTakipKategori stu = cm.FindProduct(id);
+
+
+            return View(stu);
+        }
+
+        [HttpPost]
+        public ActionResult KategoriDuzenle(StokTakipKategori UpdateKategori)
+        {
+            if (UpdateKategori != null)
+            {
+                cm.UpdateProduct(UpdateKategori);
+            }
+
+            return View();
+        }
+
+
+        public ActionResult SatisYap()
+        {
+            SaleViewModel aranan = new SaleViewModel();
+            aranan.arananUrunler = pm.GetProducts();
+            return View(aranan);
+        }
+
+        [HttpPost]
+        public ActionResult SatisYap(SaleViewModel UrunAdi )
+        {
+            SaleViewModel aranan = new SaleViewModel();
+            if (UrunAdi.arananUrun != null)
+            {
+                string arananAd = UrunAdi.arananUrun.UrunAdi;
+                aranan.arananUrunler = pm.FindProductByName(arananAd);
+            }
+            else
+            {
+                aranan.arananUrunler = pm.GetProducts();
+            }
+            
+
+
+            return View(aranan);
+        }
+
+        public ActionResult SatisTamamla(int id)
+        {
+            SaleViewModel sale = new SaleViewModel();
+         sale.arananUrun =   pm.FindProduct(id);
+            return View(sale);
+        }
+
+
+        [HttpPost]
+        public ActionResult SatisTamamla(int id, int girilenMiktar)
+        {
+            SaleViewModel sale = new SaleViewModel();
+            sale.arananUrun = pm.FindProduct(id);
+            sale.girilenMiktar = girilenMiktar;
+            sl.AddProduct(sale);
+            
+
+
+            return  RedirectToAction("SatisYap");
+           
+        }
+
+
 
         public ActionResult RegisterOK()
         {
